@@ -1,0 +1,796 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: whisper;
+    src: url("../fonts/ofont.ru_Miama Nueva.ttf");
+}
+@font-face {
+    font-family: vrdz;
+    src: url("../fonts/Vrdznagir.otf");
+}
+@font-face {
+    font-family: font2;
+    src: url("../fonts/insight-melody.ttf");
+}
+@font-face{
+    font-family: font3;
+    src:url("../fonts/1926-font.otf")
+}
+@font-face {
+    font-family: font4;
+    src: url("../fonts/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+    height: 100%;
+   
+}
+button{
+    border: none;
+}
+.page1{
+    background-image:  url("../img/fon.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+   position: fixed;
+    width: 100%;
+    height: 100%;
+    padding:  0 20px;
+    box-sizing: border-box;
+}
+.page_content{
+    position: relative;
+    z-index: 10;
+}
+.section1{
+    height: 100vh;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.brth_girl{
+    width: 400px;
+    height: 400px;
+    background-image:  url("../img/1.jpeg");
+    background-position:top -150px center;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    transition-duration:1s ;
+
+}
+.img2{
+    display: none;
+}
+.img3{
+    display: none;
+}
+.happy{
+    font-family: font2;
+    font-size: 38px;
+    letter-spacing: 3px;
+    color: #fff;
+    font-weight: 500;
+    background-color: rgb(0, 0, 0,0.40);
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 0 10px;
+}
+
+.party span{
+   margin-left: 40px;
+
+}
+.ps_rel{
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+.ps_abs{
+    position: absolute;
+    background-image:  url("../img/chevron-down-50.png");
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size:  cover;
+    width: 30px;
+    height: 20px;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    animation:anim_down 1s infinite linear;
+    
+}
+.section2{
+    width: 100%;
+    background-color: rgb(0, 0, 0,0.40);
+    padding: 40px 0;
+    box-sizing: border-box;
+
+}
+.date{
+    font-size: 36px;
+font-weight: 600;
+text-align: center;
+margin-bottom: 40px!important;
+font-family: vrdz;
+color: #fff;
+}
+.text1{
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff!important;
+    text-align: center;
+    font-family: vrdz;
+    }
+    .cafe{
+    font-size: 26px;
+    text-align: center;
+    margin-top: 20px!important;
+    margin-bottom: 20px!important;
+    font-family: vrdz;
+    font-weight: 400;
+    color:#fff;
+    }
+    .address{
+        font-size: 28px;
+        font-weight: 400;
+        text-align: center;
+        color:#fff;
+        font-style: italic;
+    }
+    .address2{
+        font-size: 22px;
+        font-weight: 400;
+        text-align: center;
+        color:#fff;
+        font-style: italic;
+    }
+    .address_link{
+        display: flex;
+        text-decoration: none!important;
+        color: #fff!important;
+        font-weight: 600 ;
+        width: 150px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        background-color:rgb(0,0,0,0.45);  
+    
+    }
+    .address_link:hover{
+        background: #fff;
+        color: #000!important;
+    }
+
+    .withlove{
+        font-size: 22px;
+        font-weight: 400;
+        text-align: center;
+        font-family: vrdz;
+        color:#fff;
+        margin:40px 0 20px!important;
+    }
+    .time{ 
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 20px!important;
+        font-family: whisper;
+        color: #fff;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+     }
+     .name{
+        font-size: 40px;
+        font-weight: 400;
+        text-align: center;
+        margin-bottom: 40px!important;
+        font-family: vrdz;
+        color:#fff;
+        margin: 0;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            box-sizing: border-box;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            display: block;
+            background-image: url("../img/icon.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          cursor: pointer;
+        }
+        .logo a{
+            width: 100%
+        }
+        .site{
+            text-decoration: none!important;
+            color: #fff!important;
+            font-family: font2;
+            font-size: 20px;
+            display: inline-block;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+   
+        .ds_block{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        .lastpart{
+            padding: 50px;
+        }
+        .invitetext{
+            color: #fff;
+            font-size: 20px;
+            text-align: center;
+        }
+        label{
+            color: #fff;
+            font-size: 20px;
+            margin-left: 20px;
+        }
+        input[type='radio']:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color:  #fff;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid #000;
+        }
+        
+        input[type='radio']:checked:after {
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: #000;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid #fff;
+        }
+        .radio-part{
+        margin-bottom: 50px;
+        }
+        .guest{
+            border:none;
+            background:transparent;
+            width: 100%;
+            padding: 20px ;
+            box-sizing: border-box;
+            color:#fff;
+            border-bottom: 1px solid #545252;
+        }
+        input:focus{
+            outline: none;
+            background:transparent;
+            color:#fff;
+        }
+        
+        ::-webkit-input-placeholder {  
+            color: #fff!important;
+            font-weight: 400;
+          }
+          .dsflex{
+            width: 100%;
+            justify-content: center;
+            display: flex;
+          }     
+@keyframes anim_down {
+    0%{
+        top:50%
+    }
+    50%{
+        top: 65%;
+    }
+    100%{
+        top:50%
+    }
+}
+ @media(min-width:1920px){
+    .page {
+        padding: 0px 60px
+    }
+    .brth_girl {
+        width: 800px;
+        height: 800px;
+    }
+    .happy{
+        margin-bottom: 20px;
+        font-size: 50px;
+    }
+    .date {
+        font-size: 60px;
+ }
+    .text1 {
+    font-size: 40px;
+  }
+    .time {
+    font-size: 50px;
+   }
+   .cafe {
+    font-size: 48px;
+   }
+   .address {
+    font-size: 36px;
+   }
+   
+.address2 {
+    font-size: 30px;
+}
+.address_link {
+   font-size: 24px;
+    width: 200px;
+    height: 60px;
+}
+.withlove {
+    font-size: 33px;
+}
+.name {
+    font-size: 56px;
+ }
+ .logo {
+    width: 100px;
+    height: 100px;
+ }
+ .site {
+    font-size: 28px;
+ }
+ .lastpart{
+    padding: 50px 0;
+}
+.invitetext{
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+label{
+    color: #fff;
+    font-size: 28px;
+    margin-left: 20px;
+}
+.mr40{
+    margin-bottom: 40px;
+}
+.guest{
+   font-size: 26px;
+}
+
+}
+
+@media(min-width:1660px) and (max-width:1920px){
+    .page {
+        padding: 0px 60px
+    }
+    .brth_girl {
+        width: 700px;
+        height: 700px;
+    }
+    .happy{
+        margin-bottom: 20px;
+        font-size: 45px;
+    }
+    .date {
+        font-size: 50px;
+ }
+    .text1 {
+    font-size: 38px;
+  }
+    .time {
+    font-size: 40px;
+   }
+   .cafe {
+    font-size: 40px;
+   }
+   .address {
+    font-size: 32px;
+   }
+   
+.address2 {
+    font-size: 28px;
+}
+.address_link {
+   font-size: 24px;
+    width: 200px;
+    height: 60px;
+}
+.withlove {
+    font-size: 33px;
+}
+.name {
+    font-size: 56px;
+ }
+ .logo {
+    width: 100px;
+    height: 100px;
+ }
+ .site {
+    font-size: 28px;
+ }
+ .invitetext{
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+label{
+    color: #fff;
+    font-size: 28px;
+    margin-left: 20px;
+}
+.mr40{
+    margin-bottom: 40px;
+}
+.guest{
+   font-size: 26px;
+}
+
+}
+@media(min-width:1440px) and (max-width:1660px){
+    .page {
+        padding: 0px 60px
+    }
+    .brth_girl {
+        width: 600px;
+        height: 600px;
+    }
+    .happy{
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    .date {
+        font-size: 45px;
+    }
+    .text1 {
+    font-size: 30px;
+    }
+    .time {
+    font-size: 40px;
+   }
+   .cafe {
+    font-size: 40px;
+   }
+   .address {
+    font-size: 34px;
+   }
+.address2 {
+    font-size: 30px;
+}
+.address_link {
+   font-size: 22px;
+    width: 200px;
+    height: 60px;
+}
+.withlove {
+    font-size: 33px;
+}
+.name {
+    font-size: 50px;
+ }
+ .logo {
+    width: 100px;
+    height: 100px;
+ }
+ .site {
+    font-size: 28px;
+ }
+ .invitetext{
+    color: #fff;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+label{
+    color: #fff;
+    font-size: 24px;
+    margin-left: 20px;
+}
+.mr40{
+    margin-bottom: 40px;
+}
+.guest{
+   font-size: 22px;
+}
+}
+
+@media(min-width:1024px) and (max-width:1144px){
+    .brth_girl {
+        width: 60vh;
+        height: 65vh;
+    }
+    .happy{
+        margin-bottom: 20px;
+        font-size: 40px;
+        height: 20vh;
+    }
+}
+@media(min-width:920px) and (max-width:1024px){
+    .brth_girl {
+        width: 60vh;
+        height: 65vh;
+    }
+    .happy{
+        margin-bottom: 20px;
+        font-size: 30px;
+        height: 20vh;
+    }
+    .date {
+        font-size: 28px;
+    }
+    .time{
+        font-size: 25px;
+        margin:20px 0;
+    }
+    .text1{
+        font-size: 21px;   
+        margin:20px 0 50px;
+
+    }
+    .cafe{
+        font-size: 30px;
+        margin: 0 0 20px!important;
+    }
+
+    .address{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .address2 {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .withlove{
+        margin: 30px 0 10px !important;
+    }
+    .name{
+        margin-bottom: 30px !important;
+        font-size: 36px;
+    }
+    .logo {
+        width: 70px;
+        height: 70px;
+}
+.site{
+    font-size: 16px;
+}
+.brth_girl{
+
+    background-position:top -110px center;
+}
+.invitetext{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+label{
+    color: #fff;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.mr40{
+    margin-bottom: 40px;
+}
+.guest{
+   font-size:16px;
+}
+}
+
+@media(min-width:768px) and (max-width:920px){
+    .brth_girl {
+        width: 65vh;
+        height: 65vh;
+    }
+    .happy{
+        margin-bottom: 20px;
+        font-size:30px;
+        height: 15vh;
+    }
+    .ps_abs {
+        width: 20px;
+        height: 10px;
+    }
+    .date {
+        font-size: 26px;
+        margin-bottom: 30px!important;
+    }
+    .time{
+        font-size: 25px;
+        margin:20px 0;
+    }
+    .text1{
+        font-size: 18px;
+        margin: 15px 0 30px
+
+    }
+    .cafe{
+        font-size: 24px;
+        margin: 0 0 10px!important;
+    }
+
+    .address{
+        font-size: 22px;
+        margin: 10px 0;
+    }
+    .address2 {
+        font-size: 18px;
+        margin:  0 0 10px;
+    }
+    .address_link{
+        margin-top: 15px;
+        font-size: 14px;
+    }
+    .withlove{
+        margin: 30px 0 10px !important;
+        font-size: 22px;
+    }
+    .name{
+        margin-bottom: 30px !important;
+        font-size: 32px;
+    }
+    .logo {
+        width: 70px;
+        height: 70px;
+}
+.site{
+    font-size: 16px;
+}
+.brth_girl{
+    background-position:top -230px center;
+}
+.invitetext{
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+label{
+    color: #fff;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.mr40{
+    margin-bottom: 40px;
+}
+.guest{
+   font-size: 14px;
+}
+}
+
+
+@media(min-width:320px) and (max-width:768px){
+    .section1 {
+        padding: 0;
+    }
+    .section2 {
+        padding:  20px;
+       
+    }
+    
+    .page{
+        padding: 0;
+    }
+    .brth_girl {
+        width:320px;
+        height: 330px;
+        
+    }
+    .happy{
+        margin-bottom: 20px;
+        font-size:30px;
+        height: 15vh;
+    }
+    .ps_abs {
+        width: 20px;
+        height: 10px;
+    }
+    .date {
+        font-size: 24px;
+        margin-bottom: 18px !important;
+    }
+    .time{
+        font-size: 18px;
+        margin: 10px 0;
+    }
+    .text1{
+        font-size: 17px;
+        margin: 15px 0 30px;
+        text-align: justify;
+
+    }
+    .cafe{
+        font-size: 18px;
+        margin: 0 0 10px!important;
+    }
+
+    .address{
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    .address2 {
+        font-size: 16px;
+        margin:  0 0 10px;
+    }
+    .address_link{
+        margin-top: 15px;
+        width: 130px;
+        font-size: 13px;
+    }
+    .withlove{
+        margin: 30px 0 10px !important;
+        font-size: 20px;
+    }
+    .name{
+        margin-bottom: 30px !important;
+        font-size: 30px;
+    }
+    .logo {
+        width: 60px;
+        height: 60px;
+}
+.site{
+    font-size: 14px;
+}
+.brth_girl{
+    background-position: top -100px center;
+}
+.invitetext{
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+label{
+    color: #fff;
+    font-size: 14px;
+    margin-left:10px;
+}
+.mr40{
+    margin-bottom: 40px;
+}
+.guest{
+   font-size:14px;
+}
+.lastpart{
+    padding: 50px 0px;
+}
+}
+@media(min-width:390px) and (max-width:768px){
+    .brth_girl {
+        width: 385px;
+        height: 480px;
+    }
+    .brth_girl{
+    background-position:top -75px center;
+}
+}
